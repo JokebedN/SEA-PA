@@ -16,10 +16,10 @@ HERitage is a web-based catalog dedicated to showcasing the extraordinary contri
 
 The data for this catalog is stored within the `scripts.js` file as an array of JavaScript objects. Each object contains the following information:
 
-* `name`: The name of the Black woman.
-* `description`: A concise summary of their achievements and impact.
-* `imageURL1`: A URL to the first relevant image.
-* `imageURL2`: A URL to the second relevant image.
+* Name: The name of the Black woman.
+* Description: A concise summary of their achievements and impact.
+* ImageURL1: A URL to the first relevant image.
+* ImageURL2: A URL to the second relevant image.
 
 The data was compiled as a personal effort to highlight these important historical figures.
 
