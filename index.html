@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
-  </head>
+<head>
+  <title>HERitage: Black Women in History | HERitage</title>
+  <meta name="description" content="A catalog celebrating the legacies of Black women in history." />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="title">HERitage</h1>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#explore-herstory-section">Black Women in History</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="home-content">
+    <section class="welcome-section" id="home-section">
+      <h2>Welcome to HERitage</h2>
+      <p>This digital space is my way of celebrating the incredible legacies of Black women throughout history their brilliance, their strength, and the profound impact they've had on our world.</p>
+      <p>It feels so important to remember these stories, especially when history can sometimes try to dim or even erase them. Think about Harriet Tubman even her vital place in the Underground Railroad was almost forgotten recently. That's why preserving our narratives is a powerful act.</p>
+      <p>This site is a heartfelt tribute to the Black women who have truly shaped everything around us.</p>
+    </section>
 
-  <body>
-    <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container"></div>
-    <div class="card" style="display: none">
-      <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+    <section id="explore-herstory-section">
+      <h2 class="title">Meet the Icons: Black Women Who Shaped Our World</h2>
+  <p>Honestly, getting to know these Black women through their stories has been an incredible experience for me. The strength they showed, the lasting marks they made on history it really stays with you. You'll find here the journeys of some truly remarkable figures, each one a testament to what courage looks like, what resilience means, and what it takes to break new ground. Their lives offer such a powerful look into the essential role Black women have always played in moving our world forward. I really hope that as you explore their stories, you'll feel the same sense of inspiration and awe that I did.</p>
+      <div class="filter-container">
+        <button onclick="filterByLetter('All')">All</button>
+        <button onclick="filterByLetter('A')">A</button>
+        <button onclick="filterByLetter('B')">B</button>
+        <button onclick="filterByLetter('C')">C</button>
+        <button onclick="filterByLetter('D')">D</button>
+        <button onclick="filterByLetter('E')">E</button>
+        <button onclick="filterByLetter('F')">F</button>
+        <button onclick="filterByLetter('G')">G</button>
+        <button onclick="filterByLetter('H')">H</button>
+        <button onclick="filterByLetter('I')">I</button>
+        <button onclick="filterByLetter('J')">J</button>
+        <button onclick="filterByLetter('K')">K</button>
+        <button onclick="filterByLetter('L')">L</button>
+        <button onclick="filterByLetter('M')">M</button>
+        <button onclick="filterByLetter('N')">N</button>
+        <button onclick="filterByLetter('O')">O</button>
+        <button onclick="filterByLetter('P')">P</button>
+        <button onclick="filterByLetter('Q')">Q</button>
+        <button onclick="filterByLetter('R')">R</button>
+        <button onclick="filterByLetter('S')">S</button>
+        <button onclick="filterByLetter('T')">T</button>
+        <button onclick="filterByLetter('U')">U</button>
+        <button onclick="filterByLetter('V')">V</button>
+        <button onclick="filterByLetter('W')">W</button>
+        <button onclick="filterByLetter('Y')">Y</button>
+        <button onclick="filterByLetter('Z')">Z</button>
       </div>
+      <div id="black-women-container">
+        </div>
+    </section>
+
+    <section class="call-to-action">
+      <button class="explore-button" onclick="showRandomWoman()">Explore HERstory</button>
+    </section>
+
+    <section class="context-sources">
+      <h3>Context & Sources</h3>
+      <p>This site is created with a commitment to historical accuracy and cultural sensitivity. The following resources provide context and support the information presented.</p>
+      <ul>
+        <li><a href="https://www.cnn.com/2025/04/06/us/national-parks-underground-railroad-harriet-tubman/index.html">CNN: National Park Service removes references to Harriet Tubman from Underground Railroad webpage</a></li>
+        <li><a href="https://www.nbcnews.com/news/nbcblk/national-park-service-restores-original-harriet-tubman-underground-rai-rcna200298">NBC News: National Park Service restores original Harriet Tubman, Underground Railroad webpage</a></li>
+      </ul>
+    </section>
+  </main>
+  <div id="card-container" style="display: none;"></div>
+  <div class="card" style="display: none">
+    <div class="card-content">
+      <h2>Name Placeholder</h2>
+      <ul>
+        <li>Description point 1</li>
+        <li>Description point 2</li>
+        <li>Description point 3</li>
+      </ul>
     </div>
-    <div class="footer">
-      <button onclick="quoteAlert();">Get A Quote!</button>
-      <button onclick="removeLastCard();">Remove A Card!</button>
-    </div>
-  </body>
+  </div>
+  <div class="footer">
+    <button onclick="quoteAlert();" style="display: none;">Get A Quote!</button>
+    <button onclick="removeLastCard();" style="display: none;">Remove A Card!</button>
+  </div>
+</body>
 </html>
